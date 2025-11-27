@@ -5,7 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-
+select getdate()
 CREATE PROCEDURE  [dbo].[WMS_DissociateItemBarcode]  
 	@ItemId int,        
 	@MeasuringUnitId int,        
@@ -38,3 +38,4 @@ BEGIN
 	WHERE  BarCode = @FMDCode
 END
 GO
+
